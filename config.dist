@@ -1,0 +1,36 @@
+CACHE_DIR="cache"
+DATA_DIR="data"
+
+TYPES=(communes arrondissements departements regions)
+
+
+# communes
+COMMUNES_SHAPE_URI="http://osm13.openstreetmap.fr/~cquest/openfla/export/communes-plus-20140630-100m-shp.zip"
+COMMUNES_SHAPE_MD5SUM="8bb71c2f922039faf27e5ab0559f8cb9"
+
+COMMUNES_DBF_FILE="communes-plus-20140630-100m-shp/communes-plus-20140630-100m.dbf"
+COMMUNES_DBF_MD5SUM="39970b5113224cddaf67bc82c84d78af"
+
+
+# arrondissements
+ARRONDISSEMENTS_SHAPE_URI="http://osm13.openstreetmap.fr/~cquest/openfla/export/arrondissements-20131220-100m-shp.zip"
+ARRONDISSEMENTS_SHAPE_MD5SUM="d93e8e27fceb14f8178b24bad5906db6"
+
+ARRONDISSEMENTS_DBF_FILE="arrondissements-20131220-100m.dbf"
+ARRONDISSEMENTS_DBF_MD5SUM="91e54356d0d4723b43345670459973bf"
+
+
+# departements
+DEPARTEMENTS_SHAPE_URI="http://osm13.openstreetmap.fr/~cquest/openfla/export/departements-20140528-100m-shp.zip"
+DEPARTEMENTS_SHAPE_MD5SUM="2fd0c4620eb2a2384c3c878cf7cbd07f"
+
+DEPARTEMENTS_DBF_FILE="departements-20140528-100m.dbf"
+DEPARTEMENTS_DBF_MD5SUM="3b1a73f2da03c9e19f6dc1f73e333ff0"
+
+
+# regions
+REGIONS_SHAPE_URI="http://osm13.openstreetmap.fr/~cquest/openfla/export/regions-20140528-100m-shp.zip"
+REGIONS_SHAPE_MD5SUM="68fd8f237efc547c7aaa5b59f070b74e"
+
+REGIONS_DBF_FILE="regions-20140528-100m.dbf"
+REGIONS_DBF_MD5SUM="ce0cff4549373438e85aaceca3924b44"

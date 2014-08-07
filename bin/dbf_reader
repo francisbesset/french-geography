@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php
+
+if (!extension_loaded('dbase')) {
+    echo 'dbf_reader needs "dbase" extension'."\n";
+    echo '  see: http://php.net/dbase'."\n";
+
+    exit(1);
+} elseif (!extension_loaded('mbstring')) {
+    echo 'dbf_reader needs "mbstring" extension'."\n";
+    echo '  see: http://php.net/mbstring'."\n";
+
+    exit(1);
+}
+
+$dbfFile = isset($_SERVER['argv'][1]) ? $_SERVER['argv'][1] : null;
+$type = isset($_SERVER['argv'][2]) ? $_SERVER['argv'][2] : null;
+$dataDir = isset($_SERVER['argv'][3]) ? $_SERVER['argv'][3] : null;
+
+if (!is_file($dbfFile)) {
+    echo sprintf('The file "%s" does not exists.'."\n", $dbfFile);
+
+    exit(1);
+} elseif (empty($type)) {
+    echo 'The type of file must be specified.'."\n";
+
+    exit(1);
+} elseif (!is_dir($dataDir)) {
+    echo sprintf('The directory "%s" does not exists.'."\n", $dataDir);
+
+    exit(1);
+}
+
+$db = dbase_open($dbfFile, 0);
+
+$csvWindows1252 = fopen(sprintf('data/%s_windows-1252.csv', $type), 'w');
+$csvUtf8 = fopen(sprintf('data/%s_utf8.csv', $type), 'w');
+
+$header = array_map(function($v) {
+    return $v['name'];
+}, dbase_get_header_info($db));
+
+fputcsv($csvWindows1252, $header, ';');
+fputcsv($csvUtf8, $header, ';');
+
+$nbRecord = dbase_numrecords($db);
+for ($i = 1; $i <= $nbRecord; $i++) {
+    $record = array_map('rtrim', dbase_get_record($db, $i));
+    unset($record['deleted']);
+
+    fputcsv($csvUtf8, $record, ';');
+    fputcsv($csvWindows1252, array_map(function($v) {
+        return mb_convert_encoding($v, 'Windows-1252', 'UTF-8');
+    }, $record), ';');
+}
+
+fclose($csvUtf8);
+fclose($csvWindows1252);
+
+dbase_close($db);
