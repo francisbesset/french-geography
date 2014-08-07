@@ -1,9 +1,15 @@
 French Geography
 ================
 
-## How to run
+## Data
+
+Generated data are available in `data` directory.
+
+
+## How to generate data?
 
     $ ./bin/osm
+
 
 ## How to install `dbase` PHP extension?
 

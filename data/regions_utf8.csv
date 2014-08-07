@@ -1,0 +1,28 @@
+code_insee;nom;nom_cl;insee_cl;nuts2;iso3166_2;wikipedia;nb_dep;nb_comm;surf_km2
+42;Alsace;Strasbourg;67482;FR42;;fr:Alsace;2;904;8328
+72;Aquitaine;Bordeaux;33063;FR61;;fr:Aquitaine;5;2296;41818
+83;Auvergne;Clermont-Ferrand;63113;FR72;;fr:Auvergne;4;1310;26172
+25;Basse-Normandie;Caen;14118;FR25;;fr:Basse-Normandie;3;1812;17786
+26;Bourgogne;Dijon;21231;FR26;;fr:Bourgogne;4;2046;31752
+53;Bretagne;Rennes;35238;FR52;;"fr:Région Bretagne";4;1270;27506
+24;Centre;Orléans;45234;FR24;;"fr:Région Centre";6;1841;39530
+21;Champagne-Ardenne;Châlons-en-Champagne;51108;FR21;;fr:Champagne-Ardenne;4;1953;25718
+94;Corse;Ajaccio;2A004;FR83;;fr:Corse;2;360;8738
+43;Franche-Comté;Besançon;25056;FR43;;fr:Franche-Comté;4;1785;16306
+01;Guadeloupe;Basse-Terre;97105;FR91;;fr:Guadeloupe;1;32;1626
+03;Guyane;Cayenne;97302;FR93;;fr:Guyane;1;22;83692
+23;Haute-Normandie;Rouen;76540;FR23;;fr:Haute-Normandie;2;1420;12350
+11;Île-de-France;Paris;75056;FR10;;fr:Île-de-France;8;1281;12069
+91;Languedoc-Roussillon;Montpellier;34172;FR81;;fr:Languedoc-Roussillon;5;1545;27764
+04;"La Réunion";Saint-Denis;97411;FR94;;"fr:La Réunion";1;24;2504
+74;Limousin;Limoges;87085;FR63;;fr:Limousin;3;747;17055
+41;Lorraine;Metz;57463;FR41;;fr:Lorraine;4;2338;23669
+02;Martinique;Fort-de-France;97209;FR92;;fr:Martinique;1;34;1096
+06;Mayotte;Dzaoudzi;97608;;;fr:Mayotte;1;17;377
+73;Midi-Pyrénées;Toulouse;31555;FR62;;fr:Midi-Pyrénées;8;3020;45601
+31;Nord-Pas-de-Calais;Lille;59350;FR30;;fr:Nord-Pas-de-Calais;2;1545;12459
+52;"Pays de la Loire";Nantes;44109;FR51;;"fr:Pays de la Loire";5;1496;32408
+22;Picardie;Amiens;80021;FR22;;fr:Picardie;3;2291;19513
+54;Poitou-Charentes;Poitiers;86194;FR53;;fr:Poitou-Charentes;4;1460;25971
+93;"Provence-Alpes-Côte d'Azur";Marseille;13055;FR82;;"fr:Provence-Alpes-Côte d'Azur";6;958;31842
+82;Rhône-Alpes;Lyon;69123;FR71;;fr:Rhône-Alpes;8;2874;44726
